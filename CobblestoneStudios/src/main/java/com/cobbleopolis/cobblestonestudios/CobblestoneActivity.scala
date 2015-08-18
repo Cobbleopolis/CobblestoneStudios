@@ -1,22 +1,19 @@
 package com.cobbleopolis.cobblestonestudios
 
-import android.app.ActionBar
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.support.v7.app
-import android.support.v7.app.ActionBarActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
+import android.support.v7.app.{ActionBar, ActionBarActivity}
+import android.view.{Menu, MenuItem}
+
 //remove if not needed
-import scala.collection.JavaConversions._
 
 class CobblestoneActivity extends ActionBarActivity {
 
     protected override def onCreate(savedInstanceState: Bundle) {
         super.onCreate(savedInstanceState)
-        val actionBar: app.ActionBar = getSupportActionBar
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.RED)); // set your desired color
+//        val actionBar: ActionBar = getSupportActionBar
+//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.RED)); // set your desired color
         setContentView(R.layout.activity_cobblestone)
     }
 
